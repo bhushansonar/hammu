@@ -1,0 +1,167 @@
+/* 
+    Document   : location.css
+    Created on : Dec 15, 2012, 4:30:39 PM
+    Author     : jk
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.ui-autocomplete {
+    background-color: white;
+    width: 300px;
+    border: 1px solid #cfcfcf;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.ui-autocomplete a {
+    text-decoration: none;
+    color: #666666;
+    cursor: pointer;
+    line-height: 20px;
+    padding-left: 2px;
+}
+
+.ui-autocomplete li:hover {
+    text-decoration: none;
+    background-color: #E8E8E8;
+    cursor: pointer;
+}
+
+.ow_googlemap_low_height {
+    height:150px
+}
+
+.ow_googlemap_low_height {
+    height:200px
+}
+
+.ow_googlemap_low_height {
+    height:250px
+}
+
+.ow_hidden_map {
+    position: absolute;
+    left: -99999px;
+}
+
+.map_list_ipc_item {
+    width:285px;
+}
+
+.ow_marker_content_txt {
+    width: 275px;
+    word-wrap: break-word;
+}
+
+.ow_googlemap_item {
+    padding: 5px;
+    position: relative;
+}
+.ow_googlemap_item .ow_user_list_data {
+    color: #333;
+}
+.ow_googlemap_item .ow_user_list_data a{
+    color: #2A80AE;
+}
+.ow_googlemap_item_list {
+    max-width: 230px;
+    padding-top: 7px;
+}
+
+.ow_googlemap_location_address {
+    padding-bottom: 5px;
+}
+
+.ow_googlemap_location_view_presentation {
+    width: 100%;
+}
+
+form .ow_googlelocation_search_distance {
+    width: 50px;
+}
+
+form .ow_googlelocation_search_miles_from {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+form .ow_googlelocation_search_location {
+    width: 138px;
+}
+
+.ui-corner-all {
+    display: block;
+}
+
+span.ic_googlemap_pin {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYNDS87tJHKNgAAAdtJREFUOMul0zFoU1EUxvH/uamxTZvSQhWF4tpJxCKdXAoujk66iIOLk5vY0UHHotDVzUFU0EmQSqm6KLQiDgVFcFAUbdMkkmea9+5753MwhSiJHTxwhnu558c5cC78Z1i/S92uVlVoyaIukAOZ3qjN+XCtvbEnUNwcGQ8lfqgmWSLDgSETZUypLofFdGkg8G1h2A5OhhY1jVrHVQjLhcrBzAwh/PVmUT5xL/puTegFDpSp0PSKJS5ybGPTT61/VaWeeIsoI1dpZsxu9Nb8AaTb2kdLRsQUaRy7H1dOPso641VbwAURPLe53pqh3kOz4emhYXMVBDMm/VL5nE2X1pT4dRJBAbXElwcC77eKzsRUyUdMgYAss7v6kmMdpFQI+ae6Lw4cYf6p63PDrygCKUZLWE2QyCxCe4fa/KrnAwGAmSfFrSIjJSIi7KYifGj6xb/fh36L9D3xZ0Q3otNNpanXZ1f9MTAC7O+Ob32B6RU/HTOhKBEFUfauqYcGU8AYMNqFhsKgFd/eYc1yjIh+pqTHX+qqoASU9+wAsDNvdTbLBLlsvaEHwGGgym8kAh0g/9cnq3yc5XlrzhyYBY4CR4CJbhdGV+sbAdiKvJoqEe7UeAHUgSbQBgpAAL8AKY/5O5gcm8MAAAAASUVORK5CYII=) no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    vertical-align: text-top;
+}
+
+.ow_googlemap_location_address .googlemap_pin {
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.ow_googlemap_location_address .googlemap_pin.ow_preloader {
+    margin-left: 5px;
+}
+
+span.googlelocation_address_icon {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    left:-22px;
+    top:7px;
+    background-repeat: no-repeat;
+}
+
+div.googlelocation_address_icon_div {
+    position:relative;
+    width:1px;
+    display: inline-block;
+}
+
+input.ow_googlelocation_location_input {
+    width:90%;
+    padding-right: 22px;
+}
+
+input.ow_googlelocation_location_search_input {
+    padding-right: 22px;
+}
+
+div.googlelocation_address_div {
+    vertical-align: top;
+    display:inline-block;
+}
+
+/*span.ui-helper-hidden-accessible
+{
+    display:none;
+}*/
+
+li._google_map_mobile_userlist
+{
+    display:none;
+}
+
+.googlelocation_form_element_div span.ui-helper-hidden-accessible {
+    display:none;
+}
+
+.googlelocation_address_div span.ui-helper-hidden-accessible {
+    display:none;
+}

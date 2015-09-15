@@ -1,0 +1,64 @@
+{style}{literal}
+.home_page .ow_right{ margin-right: 4px !important; }
+{/literal}{/style}
+
+<link href="{$theme_css_url}dd.css" rel="stylesheet" type="text/css">
+
+<script src="{$theme_css_url}js/jquery.dd.js"></script>
+<div id="wrap">
+            <header class="head_main">
+                <h1 class="logo">
+                    <a href="{$site_url}"> <img src="{$theme_css_url}img/logo.png" alt=""></a>
+                </h1>
+            </header>
+    
+            <div class="flag_main">
+                {component class='BASE_CMP_Console'}
+            </div>
+            <nav class="menu_main">
+                <div class="part_menu"></div>
+            </nav>
+            <section class="main_section">
+                <div class="main_div">
+                    <div class="home_page">
+                        
+
+                            {component class='BASE_CMP_SignIn'}
+
+                            <div class="or_mar">
+
+                                OR
+                            </div>
+
+                            <div class="regs_mar">
+                                {component class='BASE_CMP_JoinButton' cssClass='reg_btn'}
+                            </div>
+                        </div>
+
+                        <div class="home_video_main">
+
+                            <video class="hammu_video" width="542" height="307" controls>
+                                <source src="{$site_url}hammu.mp4" type="video/mp4">
+                                <source src="{$site_url}movie.ogg" type="video/ogg">
+
+                            </video>
+                        </div>
+
+                    </div>
+
+
+               
+            </section>
+            <div class="foot_botom">
+                {$bottom_menu}
+
+            </div>
+            <footer class="foot_main">
+                <div class="foot_area">
+                    <p class="copy">
+                        {text key='base+copyright'}
+                    </p>
+                </div>
+            </footer>
+        </div>
+{decorator name='floatbox'}

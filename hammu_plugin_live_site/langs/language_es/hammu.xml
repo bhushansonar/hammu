@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="hammu" label="Hammu" language_tag="es" language_label="Spanish">
+    <key name="login_sorry_username_not_match">
+        <value>Lo sentimos , nombre de usuario o la contraseña no match.Please inténtalo de nuevo</value>
+    </key>
+	   <key name="login_client">
+        <value>Cliente</value>
+    </key>
+	  <key name="login_escort">
+        <value>Escort</value>
+    </key>
+	  <key name="login_success">
+        <value>Exito</value>
+    </key>
+	  <key name="signup_error_prorper_date">
+        <value>Ofrezca fecha adecuada</value>
+    </key>
+	<key name="resend_mail_sent_success">
+        <value>La verificación de email ha sido enviada con éxito</value>
+    </key>
+	<key name="email_auth_success">
+        <value>Autenticación correcta</value>
+    </key>
+	<key name="email_invalid_code">
+        <value>Código incorrecto Inténtelo de nuevo</value>
+    </key>
+	<key name="email_already_exists">
+        <value>Email ya existente</value>
+    </key>
+	<key name="username_already_exists">
+        <value>Nombre de usuario ya existente</value>
+    </key>
+	<key name="forgot_no_user_with_email">
+        <value>No hay ningún usuario con esta direccion de email</value>
+    </key>
+	<key name="forgot_reset_code_already_sent">
+        <value>Código de reseteo enviado. Vuelva a intentarlo en 10 minutos</value>
+    </key>
+	<key name="forgot_info_sent_to_your_email">
+        <value>El cambio de información y nueva contraseña han sido enviadas a su email</value>
+    </key>
+	<key name="password_reset_success">
+        <value>Restablecimiento de contraseña con éxito</value>
+    </key>
+	<key name="reset_code_not_valid_expired">
+        <value>Desafortunadamente su código de restablecimiento no es válido o ha caducado. Por favor, siga el enlace y trate de restablecerlo de nuevo.</value>
+    </key>
+	<key name="password_has_changed">
+        <value>Contraseña ha sido cambiada</value>
+    </key>
+	<key name="password_not_match">
+        <value>Contraseña incorrecta. Intente de nuevo.</value>
+    </key>
+	<key name="search_success">
+        <value>Búsqueda completada con éxito</value>
+    </key>
+	<key name="sorry_no_people_found">
+        <value>Disculpe. No se ha encontrado a nadie disponible. Cambie sus preferencias e inténtelo de nuevo.</value>
+    </key>
+	<key name="listing_success">
+        <value>con éxito</value>
+    </key>
+	<key name="listing_fail_to_get_location">
+        <value>No se ha podido detectar su posición. Intentelo de nuevo.</value>
+    </key>
+	<key name="listing_unsuccessful">
+        <value>Disculpen. Inténtelo de nuevo</value>
+    </key>
+	<key name="provide_correct_data">
+        <value>Disculpe. Introduzca los datos correctos</value>
+    </key>
+	<key name="delete_noti_success">
+        <value>Notificación borrada</value>
+    </key>
+    <key name="delete_noti_fail">
+        <value>Notificación no borrada o no existente</value>
+    </key>
+    <key name="delete_photo_success">
+        <value>Foto borrada</value>
+    </key>
+    <key name="delete_photo_fail">
+        <value>Foto no borrada o no existente</value>
+    </key>
+    <key name="empty_gallary">
+        <value>No hay fotos en la galeria. Por favor, añadir fotos</value>
+    </key>
+    <key name="photo_upload_success">
+        <value>Foto subida</value>
+    </key>
+    <key name="photo_upload_fail">
+        <value>Foto no subida. Ha occurrido un fallo.</value>
+    </key>
+    <key name="logout_success">
+        <value>Sesión cerrada</value>
+    </key>
+    <key name="favorite_success">
+        <value>Añadido en favoritos </value>
+    </key>
+    <key name="favorite_fail">
+        <value>No hay favoritos</value>
+    </key>
+    <key name="unfavorite_successfully">
+        <value>Borrado de favoritos</value>
+    </key>
+    <key name="check_available_fail">
+        <value>Actualizado. Cambie su estado.</value>
+    </key>
+    <key name="check_available_success">
+        <value>Actualizado</value>
+    </key>
+    <key name="contact_us_success">
+        <value>Mensaje enviado</value>
+    </key>
+    <key name="update_invti_log_fail">
+        <value>No actualizado</value>
+    </key>
+    <key name="client_notification_list_fail">
+        <value>No hay ninguna notificación</value>
+    </key>
+    <key name="paypal_decline">
+        <value>Denegado. Utilice una tarjeta valida o use Paypal</value>
+    </key>
+    <key name="paypal_fail">
+        <value>Ya ha adquirido la rosa</value>
+    </key>
+    <key name="paypal_success">
+        <value>Gracias por adquirir una rosa le pasará su contacto {$user_details['user_name']}</value>
+    </key>
+    <key name="acceptProposeDate_location_fail">
+        <value>Localidad inválida</value>
+    </key>
+    <key name="acceptProposeDate_fail">
+        <value>Fecha propuesta ya aceptada</value>
+    </key>
+    <key name="acceptProposeDate_success">
+        <value>Fecha propuesta aceptada</value>
+    </key>
+    <key name="reArrageInvites_fail">
+        <value>Nueva propuesta de fecha y hora confirmada</value>
+    </key>
+    <key name="reArrageInvites_success">
+        <value>Nueva propuesta de fecha y hora</value>
+    </key>
+    <key name="proposeDateInvitation_fail">
+        <value>Invitación para fecha de propuesta ha sido pospuesta</value>
+    </key>
+    <key name="proposeDateInvitation_success">
+        <value>Invitación para fecha de propuesta </value>
+    </key>
+    <key name="escortProposeDateDecline_success">
+        <value>Fecha de propuesta denegada</value>
+    </key>
+    <key name="escortProposeDateDecline_fail">
+        <value>Fecha de propuesta ya denegada</value>
+    </key>
+    <key name="clientDeclineInvites_success">
+        <value>Invitación denegada</value>
+    </key>
+    <key name="clientDeclineInvites_fail">
+        <value>Invitación ya denegada</value>
+    </key>
+    <key name="acceptInvites_success">
+        <value>Invitación acceptada</value>
+    </key>
+    <key name="acceptInvites_fail">
+        <value>Invitación no aceptada o ya aceptada</value>
+    </key>
+    <key name="escort_outof_office">
+        <value>Escort no disponible</value>
+    </key>
+    <key name="sendInvites_fail">
+        <value>Invitación no enviada o ya enviada</value>
+    </key>
+    <key name="sendInvites_success">
+        <value>Invitación enviada</value>
+    </key>
+    <key name="setProfilePic_fail">
+        <value>Proporcione correctamente los datos del perfil.</value>
+    </key>
+    <key name="setProfilePic_success">
+        <value>Foto de perfil subida correctamente</value>
+    </key>
+    <key name="setProfiledetails_location">
+        <value>Introduzca su localización correcta</value>
+    </key>
+    <key name="setProfiledetails_fail">
+        <value>Introduza datos correctos de su perfil</value>
+    </key>
+    <key name="setProfilePic_success">
+        <value>Su perfil ha sido actualizado</value>
+    </key>
+    <key name="setProfilePic_user">
+        <value>Introduzca su nombre de usuario</value>
+    </key>
+    <key name="setProfilePic_date">
+        <value>Ofrezca fecha adecuada</value>
+    </key>
+</prefix>

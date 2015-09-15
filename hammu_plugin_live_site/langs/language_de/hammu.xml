@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="hammu" label="Hammu" language_tag="de" language_label="German">
+    <key name="login_sorry_username_not_match">
+        <value>Sorry, Benutzername oder Passwort nicht match.Please versuchen Sie es erneut</value>
+    </key>
+	  <key name="login_client">
+        <value>Kunde</value>
+    </key>
+	  <key name="login_escort">
+        <value>Escort</value>
+    </key>
+	  <key name="login_success">
+        <value>Erfolgreiche Suche</value>
+    </key>
+	  <key name="signup_error_prorper_date">
+        <value>Bitte geben Sie ein gültiges Datum ein</value>
+    </key>
+	<key name="resend_mail_sent_success">
+        <value>Bestätigungsemail wurde versandt</value>
+    </key>
+	<key name="email_auth_success">
+        <value>Authentifikation erfolgreich</value>
+    </key>
+	<key name="email_invalid_code">
+        <value>Ungültiger Sicherheitscode. Bitte versuchen Sie es nochmals!</value>
+    </key>
+	<key name="email_already_exists">
+        <value>Email-Adresse bereits vorhanden!</value>
+    </key>
+	<key name="username_already_exists">
+        <value>Benutzer-Name bereitsvorhanden!</value>
+    </key>
+	<key name="forgot_no_user_with_email">
+        <value>Es gibt keinen Benutzer mit dieser Email-Adresse</value>
+    </key>
+	<key name="forgot_reset_code_already_sent">
+        <value>Rückstellungscode bereits zugestellt. Bitte versuchen Sie es in 10 Minuten nochmals.</value>
+    </key>
+	<key name="forgot_info_sent_to_your_email">
+        <value>Eine Bestätigung für ihr neues Passwort wurde an ihre Email-Adresse gesandt.</value>
+    </key>
+	<key name="password_reset_success">
+        <value>Passwort erfolgreich zurück gestellt</value>
+    </key>
+	<key name="reset_code_not_valid_expired">
+        <value>Ihr Rückstellungscode ist ungültig oder verfallen. Bitte wählen Sie den Link, um es nochmals zurück zu stellen.</value>
+    </key>
+	<key name="password_has_changed">
+        <value>Passwort wurde geändert!</value>
+    </key>
+	<key name="password_not_match">
+        <value>Passwort stimmt nicht überein. Versuchen Sie es nochmals!</value>
+    </key>
+	<key name="search_success">
+        <value>Erfolgreiche Suche</value>
+    </key>
+	<key name="sorry_no_people_found">
+        <value>Sorry, kein passendes Profile gefunden. Bitte versuchen Sie es nochmals mit anderen Kriterien</value>
+    </key>
+	<key name="listing_success">
+        <value>erfolgreich</value>
+    </key>
+	<key name="listing_fail_to_get_location">
+        <value>Der Standort konnte nicht ermittelt werden. Versuchen Sie es bitte nochmals</value>
+    </key>
+	<key name="listing_unsuccessful">
+        <value>Erfolglos. Bitte versuchen Sie es nochmals</value>
+    </key>
+	<key name="provide_correct_data">
+        <value>Sorry, bitte geben Sie gültigen Daten ein</value>
+    </key>
+	<key name="delete_noti_success">
+        <value>Nachricht erfolgreich gelöscht!</value>
+    </key>
+    <key name="delete_noti_fail">
+        <value>Nachricht nicht gelöscht oder vorhanden!</value>
+    </key>
+    <key name="delete_photo_success">
+        <value>Photo erfolgreich gelöscht!</value>
+    </key>
+    <key name="delete_photo_fail">
+        <value>Photo nicht gelöscht oder vorhanden!</value>
+    </key>
+    <key name="empty_gallary">
+        <value>Sie haben kein Photo in ihrer Gallerie. Bitte laden Sie ein Photo hoch!</value>
+    </key>
+    <key name="photo_upload_success">
+        <value>Photo erfolgreich hochgeladen!</value>
+    </key>
+    <key name="photo_upload_fail">
+        <value>Fehler beim Hochladen des Photos</value>
+    </key>
+    <key name="logout_success">
+        <value>Erfolgreich abgemeldet</value>
+	</key>
+    <key name="favorite_success">
+        <value>Erfoglreich in der Favortien-Liste aufgenommen</value>
+    </key>
+    <key name="favorite_fail">
+        <value>Sie haben keine Favoriten gespeichert</value>
+    </key>
+    <key name="unfavorite_successfully">
+        <value>Von der Favoriten-Liste erfolgreich entfernt</value>
+    </key>
+    <key name="check_available_fail">
+        <value>Bereits aktualisiert. Bitte ändern Sie ihren Status</value>
+    </key>
+    <key name="check_available_success">
+        <value>Aktualisierung erfolgreich</value>
+    </key>
+    <key name="contact_us_success">
+        <value>Ihre Nachricht wurde erfolgreich übermittelt</value>
+    </key>
+    <key name="update_invti_log_fail">
+        <value>Aktualisierung fehlgeschlagen</value>
+    </key>
+    <key name="client_notification_list_fail">
+        <value>Sie haben keine neuen Nachrichten</value>
+    </key>
+    <key name="paypal_decline">
+        <value>ABGELEHNT - IHRE ANGEGEBENE KARTE UNDERSTÜTZT DIESE WÄHRUNG NICHT. BITTE GEBEN SIE EINE ANDERE KARTE AN ODER VERWENDEN SIE PAYPAL</value>
+    </key>
+    <key name="paypal_fail">
+        <value>Sie haben bereits eine Rose für dieses Treffen gekauft</value>
+    </key>
+    <key name="paypal_success">
+        <value>Besten Dank für den Kauf einer virtuellen Rose Nun erhalten Sie die Kontaktdaten für das Treffen {$user_details['user_name']}</value>
+    </key>
+    <key name="acceptProposeDate_location_fail">
+        <value>Ungültiger Standort</value>
+    </key>
+    <key name="acceptProposeDate_fail">
+        <value>Vorgeschlagenes Datum bereits akzeptiert!</value>
+    </key>
+    <key name="acceptProposeDate_success">
+        <value>Vorgeschlagenes Datum akzeptiert! </value>
+    </key>
+    <key name="reArrageInvites_fail">
+        <value>Neues Datum und Zeit bereits vorschlagen</value>
+    </key>
+    <key name="reArrageInvites_success">
+        <value>Neues Datum und Zeit vorschlagen</value>
+    </key>
+    <key name="proposeDateInvitation_fail">
+        <value>Einladung zu einem vorgeschlagenem Datum bereits versandt!</value>
+    </key>
+    <key name="proposeDateInvitation_success">
+        <value>Einladung zu einem vorgeschlagenem Datum!</value>
+    </key>
+    <key name="escortProposeDateDecline_success">
+        <value>Vorgeschlagenes Datum abgelehnt! </value>
+    </key>
+    <key name="escortProposeDateDecline_fail">
+        <value>Vorgeschlagenes Datum bereits abgelehnt!</value>
+    </key>
+    <key name="clientDeclineInvites_success">
+        <value>Einladung abgelehnt!</value>
+    </key>
+    <key name="clientDeclineInvites_fail">
+        <value>Einladung bereits abgelehnt!</value>
+    </key>
+   <key name="acceptInvites_success">
+        <value>Einladung angenommen!</value>
+    </key>
+    <key name="acceptInvites_fail">
+        <value>Einladung nicht oder bereits angenommen!</value>
+    </key>
+    <key name="escort_outof_office">
+        <value>Escort ist momentan nicht verfügbar</value>
+    </key>
+    <key name="sendInvites_fail">
+        <value>Einladung nicht oder bereits versandt!</value>
+    </key>
+    <key name="sendInvites_success">
+        <value>Einladung versandt!</value>
+    </key>
+    <key name="setProfilePic_fail">
+        <value>Bitte geben Sie gültige Profil-Daten ein!</value>
+    </key>
+    <key name="setProfilePic_success">
+        <value>Profil-Photo wurde erfolgreich hochgeladen</value>
+    </key>
+    <key name="setProfiledetails_location">
+        <value>Bitte geben Sie einen gültigen Standort an!</value>
+    </key>
+    <key name="setProfiledetails_fail">
+        <value>Bitte geben Sie gültige Profil-Daten ein!</value>
+    </key>
+    <key name="setProfilePic_success">
+        <value>Ihr Profil wurde angepasst!</value>
+    </key>
+    <key name="setProfilePic_user">
+        <value>Bitte geben Sie einen Benutzernamen an</value>
+    </key>
+    <key name="setProfilePic_date">
+        <value>Bitte geben Sie ein gültiges Datum ein</value>
+    </key>
+</prefix>

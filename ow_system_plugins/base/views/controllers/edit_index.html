@@ -1,0 +1,108 @@
+{style}
+{literal}
+.edit_info_left{ background:none !important; border:none !important; color:#6a6a6a !important; text-align:left !important; }
+.edit_info_right{background:none !important; border:none !important; color:#6a6a6a !important; }
+.edit_info_right input[type=checkbox]{ height: auto !important; width: auto !important; }
+.edit_info_right select{ width: auto !important; }
+.ow_tr_first{ display:none !important; }
+.profile_box{ width: 496px !important; float:left;}
+.save_edit{ width: 405px !important;}
+.save_edit input[type=submit]{ height: auto !important; border: 1px solid #6e6e6e !important; padding: 6px 32px !important; color: #5a5a5a !important;}
+.main_right{ width: 736px !important;}
+.green_title{ width: 476px !important; }
+.status_box{ float:left; margin-left: 24px; margin-top: -33px; }
+.unregister_profile_button{ border-color:#6e6e6e !important; color: #5a5a5a !important; height: 50px !important; }
+.edit_info_right input[type="radio"] { height: auto !important; width: auto !important; }
+{/literal}
+{/style}
+{literal}
+
+<script language="javascript" type="text/javascript">
+    $(function(){
+        $(".unregister_profile_button").click(
+            function() { window.location = {/literal}"{$unregisterProfileUrl}"{literal} }
+        );
+   });
+</script>
+{/literal}
+
+{if $user_sex == '808aa8ca354f51c5a3868dad5298cd72'}
+    {style}{literal}
+        .main_joinarea{ background: url(men-bg.png)no-repeat center 256px !important; }
+    {/literal}{/style}
+{/if}
+{if !empty($changePassword) }
+    {block_decorator name="box" type="empty" addClass="ow_superwide ow_automargin" }
+        <div class="clearfix ow_stdmargin"><div class="ow_right">{$changePassword}</div></div>
+    {/block_decorator}
+{/if}
+
+{block_decorator name="box" type="empty" addClass="ow_superwide ow_automargin"}
+{if isset($editSynchronizeHook)}
+    {block_decorator name="box" addClass="ow_center" iconClass='ow_ic_update' langLabel='base+edit_remote_field_synchronize_title' style="overflow:hidden;"}
+       {foreach from=$editSynchronizeHook item='item'}
+          {$item}
+       {/foreach}
+    {/block_decorator}
+    {block_decorator name="box" type="empty" addClass="ow_center" style="padding:15px;"}
+        {text key="base+join_or"}
+    {/block_decorator}
+{/if}
+
+{form name=editForm}
+    <table class="ow_table_1 ow_form ow_stdmargin">
+        {if $displayAccountType}
+            <tr class="ow_alt1 ow_tr_first">
+                <td class="ow_label">
+                    {label name='accountType'}
+                </td>
+                <td class="ow_value">
+                    {input name='accountType'}
+                    <div style="height:1px;"></div>
+                    {error name='accountType'}
+                </td>
+                <td class="ow_desc ow_small">
+
+                </td>
+            </tr>
+        {/if}
+        <tr class="ow_tr_delimiter"><td></td></tr>
+        {foreach from=$questionArray key='section' item='questions' name='question'}
+            {if !empty($section) }
+                <tr class="ow_tr_first"><th colspan="3">{text key="base+questions_section_`$section`_label"}</th></tr>
+            {/if}
+            
+            {foreach from=$questions item='question' name='question'}
+                {cycle assign='alt' name=$section values='ow_alt1,ow_alt2'}
+                <tr class=" {if $smarty.foreach.question.last}ow_tr_last{/if} edit_info_main">
+                    <td class="{$alt} ow_label edit_info_left in-block">
+                        {label name=$question.name}
+                    </td>
+                    <td class="{$alt} ow_value edit_info_right in-block">
+                        {input name=$question.name class='edit_input'}
+                        <div style="height:1px;"></div>
+                        {error name=$question.name}
+                    </td>
+                    <td class="{$alt} ow_desc ow_small">
+                        {question_description_lang name=$question.name}
+                    </td>
+                </tr>
+            {/foreach}
+            {if !empty($section)}{if !$smarty.foreach.question.first}
+            <tr class="ow_tr_delimiter"><td></td></tr>
+            {/if}
+            {/if}
+        {/foreach}
+    </table>
+	<div class="clearfix ow_stdmargin{if !$isAdmin} ow_btn_delimiter{/if}">
+	   <div class="ow_right save_edit">
+		   {if !$isAdmin }
+				{decorator name="button" class="unregister_profile_button ow_ic_delete ow_red ow_negative pro_btnsin" langLabel='base+delete_profile'}
+		   {/if}
+		   {submit name='editSubmit' class='pro_btnsin'}
+	   </div>
+	</div>
+
+
+{/form}
+{/block_decorator}

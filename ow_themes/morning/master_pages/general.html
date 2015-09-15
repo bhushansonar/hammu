@@ -1,0 +1,135 @@
+<style>
+    .ow_sign_in_wrap{ width: 100% !important;}
+    .ow_sign_in{ width: 100% !important; }
+    .ow_box{ padding-left: 0px !important; }
+    .mail_part{ margin-left:0px !important; margin-bottom: 0px !important; }
+    .ow_sign_in_wrap form{ padding: 0px !important;}
+    .email_input{ width: 160px !important; background: #e4e4e4 none repeat scroll 0 0 !important;
+                  border: 1px solid #7c7c7c !important;
+                  border-radius: 5px !important;
+                  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3) inset !important;
+                  height: 40px !important;
+                  margin: 19px 0 0 !important;
+                  padding: 0 0 0 15px !important;
+    }
+    .ow_right{ float: left !important; }
+    .forgot_pass{ margin-left: 0px !important;}
+    .ow_form_options{ margin-top: 20px !important; }
+    .ow_sign_in input[type=submit]{ width:92px !important; margin-left: 41px !important; }
+    .red_span{ color: #FF0000 !important;}
+</style>
+{if !empty($is_login_id)}
+{style}{literal}
+.main_right{ width: 736px !important; }
+.green_title{ width: 476px !important; }
+.profile_box{ float:left !important; }
+.status_box{ float:left !important; margin-left: 24px !important; margin-top: -33px !important;}
+.cont_inputleft{ padding-right: 20px !important; }
+.ow_smallmargin, .profile_box .ow_stdmargin{ margin-left: 10px !important; }
+.h3_title{ margin-left: 10px !important; font-size:15px !important; }
+.ladyhome_left .ow_box_cap_empty{ background:none !important; border:none !important; }
+.ladyhome_left .ow_box_cap_empty h3{ margin-left: 52px !important; height: 22px; margin-top: 5px; }
+{/literal}{/style}
+{/if}
+<div id="wrap">
+    <header class="head_main">
+
+        <h1 class="logo-small">
+            <a href="{$site_url}"> <img src="{$theme_css_url}img/logo-small.png" alt=""></a>
+        </h1>
+    </header>
+    <div class="flag_main">
+        {component class='BASE_CMP_Console'}
+    </div>
+    <nav class="menu_main">
+        <div class="part_menu">
+            <div class="main-menu">
+                
+                {$main_menu}
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="main_join">
+        {if ($page_name == 'download-app') }
+            <div class="main_div">
+                    <div class="download_main">
+                        <div class="phone_main">
+                            <div class="idevice"><img src="{$theme_css_url}img/iphone.png" alt=""></div>
+                            <div class="iabtn">
+                                <h2 class="download_title">Download our App</h2>
+                                <a href="{text key='ads+ads_app_store'}"><img class="appstore_img" src="{$theme_css_url}img/appstore_btn.png" alt=""></a>
+                                <a href="{text key='ads+ads_google_play'}"><img class="google_play" src="{$theme_css_url}img/googleplay_btn.png" alt=""></a>
+                            </div>
+                            <div class="adevice"><img src="{$theme_css_url}img/android_btn.png" alt=""></div>
+
+                        </div>
+                    </div>
+            </div>
+        {else}
+        <div class="main_joinarea">
+            {if empty($is_login_id)}
+            <div class="main_left multbg-top-to-bottom ">
+                <div class="sign_box">
+                    {component class='BASE_CMP_SignIn'}
+                </div>
+            </div>
+            {else}
+            <div class="ladyhome_left">
+
+                {component class="BASE_CMP_Sidebar"}
+
+            </div>
+            {/if}
+
+            <div class="main_right">
+                <h1 class="green_title">
+                    {$heading}
+                </h1>
+                <div class="profile_box">
+                    <div class="pro_info">
+                        {add_content key='base.add_page_top_content'}
+                        {$content}
+                        {add_content key='base.add_page_bottom_content'}
+                    </div>
+                </div>
+
+                {if !empty($is_login_id)}
+                    <div class="ladyhome_right_rg status_box">
+                        <h4 class="stastus_tit">Status</h4>
+                        <div class="line push_ten"></div>
+                        <div class="status_main">
+                            <div class="status_left in-block">Profile status<span class="right-flot">:</span></div>
+                            <div class="status_right in-block">{$profile_status}</div>
+                        </div>
+<!--                        <div class="status_main">
+                            <div class="status_left in-block">Membership <span class="right-flot">:</span></div>
+                            <div class="status_right in-block">{$membership}</div>
+                        </div>-->
+                    </div>
+                {/if}
+
+            </div>
+
+        </div>
+        {/if}
+    </section>
+
+</div>
+<div class="foot_botom">
+    <div class="home_policy">
+        {$bottom_menu}
+    </div>
+</div>
+<footer class="foot_main">
+    <div class="foot_area">
+        <p class="copy">
+            {text key='base+copyright'}
+        </p>
+    </div>
+
+</footer>
+
+
+{decorator name='floatbox'}

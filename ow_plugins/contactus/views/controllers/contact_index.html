@@ -1,0 +1,52 @@
+{style}
+{literal}
+table.ow_table_1 td.ow_label
+{
+    width: 35%;
+}
+
+.contact_send{ line-height: 0px !important; padding: 23px 26px !important; font-size: 18px !important; margin-left: 110px !important; color: #5a5a5a !important; border:1px solid #6e6e6e !important; }
+.cont_texarea{ background: #fff; border: solid 1px #8a8a8a; border-radius: 5px; height:126px !important; width: 326px;
+               padding:15px 0 0 15px; margin: 0 0 0 0;
+               -webkit-box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.3);
+               -moz-box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.3);
+               box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.3);
+}
+.cap_input{ background: #fff !important; border: solid 1px #8a8a8a !important; border-radius: 5px !important; height: 48px !important; width: 115px !important;
+            padding: 0 0 0 15px !important; margin: 0 0 0 0 !important;
+            -webkit-box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.3) !important;
+            -moz-box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.3) !important;
+            box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.3) !important;
+}
+.cont_inputright img{ position: relative; left: -58px; }
+.cont_inputright #siimage_refresh{ position: relative; left: -37px; }
+.cont_inputleft{ padding-right: 20px !important; }
+{/literal}
+{/style}
+{form name='contact_form'}
+<table class="ow_table_1 ow_form ow_automargin">
+    <tr class="ow_alt1 ow_tr_first cont_input" style="background: none; display: none;">
+        <td class="ow_label cont_inputleft" style="background: none;">{label name='to'}</td>
+		<td class="ow_value cont_inputright" style="background: none;">{input name='to' class='contact_input'}{error name='to'}</td>
+	</tr>
+    <tr class="ow_alt2 cont_input cont_input" style="background: none;">
+		<td class="ow_label cont_inputleft" style="background: none;">{label name='from'}</td>
+		<td class="ow_value cont_inputright" style="background: none;">{input name='from' class='contact_input'}{error name='from'}</td>
+	</tr>
+        <tr class="ow_alt1 cont_input" style="background: none;">
+		<td class="ow_label cont_inputleft" style="background: none;">{label name='subject'}</td>
+		<td class="ow_value cont_inputright" style="background: none;">{input name='subject' class='contact_input'}{error name='subject'}</td>
+	</tr>
+    <tr class="ow_alt2 cont_input" style="background: none;">
+		<td class="ow_label cont_inputleft" style="background: none;">{label name='message'}</td>
+		<td class="ow_value cont_inputright" style="background: none;">{input name='message' class='contact_input cont_texarea'}{error name='message'}</td>
+	</tr>
+    <tr class="ow_alt1 ow_tr_last cont_input" style="background: none;">
+		<td class="ow_label cont_inputleft" style="background: none;">{label name='captcha'}</td>
+		<td class="ow_value ow_center cont_inputright" style="background: none;">{input style='float:left;' name='captcha' class='cap_input'}{error name='captcha'}</td>
+	</tr>
+</table>
+<div class="clearfix ow_stdmargin ow_automargin"><div class="ow_right">
+{submit name='send' class='ow_button ow_ic_mail pro_btnsin contact_send'}
+</div></div>
+{/form}

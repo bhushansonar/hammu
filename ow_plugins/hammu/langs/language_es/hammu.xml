@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="hammu" label="Hammu" language_tag="es" language_label="Spanish">
+
+    <key name="invitation_propose_date_escort_log">
+        <value>Sorry! You Declined Your Propose Date</value>
+    </key>
+    <key name="invitation_propose_date_client_log">
+        <value>Sorry! {$user} Declined Your Propose Date</value>
+    </key>
+</prefix>

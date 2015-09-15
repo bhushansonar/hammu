@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="ads" label="Advertisement" language_tag="en" language_label="English">
+    <key name="ads_app_store">
+        <value>app store</value>
+    </key>
+    <key name="ads_google_play">
+        <value>google store</value>
+    </key>
+</prefix>

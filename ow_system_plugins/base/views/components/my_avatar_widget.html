@@ -1,0 +1,17 @@
+{style}
+{literal}
+.ow_box_empty{ padding:0px !important; }
+.ladyhome_left .ow_stdmargin{ margin-bottom:60px !important;}
+.sign_joinbtn{ line-height:60px !important;}
+
+{/literal}
+{/style}
+<div class="ow_my_avatar_widget clearfix my_img">
+	<div class="ow_left ow_my_avatar_img lady_pic">{decorator name='avatar_item' data=$avatar}</div>
+    <div class="ow_my_avatar_cont my_name">
+    	<a href="{$avatar.url}" class="ow_my_avatar_username"><span>{$avatar.title}</span></a>
+    </div>
+        <div class="lady_btn">
+            <a class="sign_joinbtn" href="{$site_url}sign-out">Sign Out</a>
+        </div>
+</div>

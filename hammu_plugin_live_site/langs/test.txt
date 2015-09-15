@@ -1,0 +1,13 @@
+
+$language->text("hammu", "available"); 
+$language->text("hammu", "login_sorry_username_not_match");
+$language->text("hammu", "login_success");
+$language->text("hammu", "login_client");
+$language->text("hammu", "login_escort");
+$language->text("hammu", "resend_mail_sent_success");
+$language->text("hammu", "email_auth_success");
+$language->text("hammu", "email_invalid_code");
+$language->text("hammu", "email_already_exists"); 
+$language->text("hammu", "username_already_exists"); 
+
+getUserInfo

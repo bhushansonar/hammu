@@ -1,0 +1,54 @@
+{style}
+{literal}
+.client_style{color:#00c2bb; text-align:left;}
+.escort_style{color:#8f009c; text-align:left;}
+{/literal}
+{/style}
+{$paging}
+{form name="invites-log-form"}
+<table id="invites_logs" class="ow_table_2">
+
+    <tr class="ow_tr_first">
+        <th width="1"><input type="checkbox" class="check-all" /></td>
+        <th>Inviter</th>
+        <th>Invitee</th>
+        <th>Logs</th>
+    </tr>
+    {foreach from=$log_datas item='log_data' key='key'}
+    <tr id="check-all-check" class="{cycle values='ow_alt1,ow_alt2'}">
+        <td><input type="checkbox" value="{$log_data.0.inviter_id}_{$log_data.0.invitee_id}" name="invitesIds[]" /></td>
+        <td>
+            <span class="client_style">{$log_data.0.inviter_username}</span>
+        </td>
+        <td>
+            <span class="escort_style">{$log_data.0.invitee_username}</span>
+        </td>
+        <td>
+            {foreach from=$log_data item='log'}
+            <p {if $log.user_id == $log.inviter_id} class="client_style" {else} class="escort_style" {/if}>{$log.message}</p>
+            {/foreach}
+        </td>
+    </tr>
+    {/foreach}
+    <!--    <tr class="ow_tr_last">
+            <th width="1"><input type="checkbox" class="check-all" /></td>
+            <th>Inviter</th>
+            <th>Invitee</th>
+            <th>Logs</th>
+        </tr>-->
+    <tr class="ow_alt1 ow_tr_last">
+        <td width="1"><input type="checkbox" class="check-all" /></td>
+        <td colspan="3" class="ow_txtleft">
+            <div class="clearfix ow_submit">
+                <div class="ow_left">{submit name='save' class='ow_ic_save save_btn'}</div>
+                <div class="ow_right">{submit name='save2' class='ow_ic_save save_btn2'}</div>
+            </div>
+        </td>
+    </tr>
+
+</table>
+
+{/form}
+
+
+{$paging}

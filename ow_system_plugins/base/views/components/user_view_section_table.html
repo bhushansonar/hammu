@@ -1,0 +1,34 @@
+{style}{literal}
+    .ow_googlemap_location_view_presentation{ display:inline-block !important; }
+
+    .ow_googlemap_location_view_presentation a{ color:#6a6a6a !important; }
+    .profile_box{ width: 496px !important; float:left; }
+    .green_title{ width: 476px !important; }
+    .status_box{ float:left; margin-left: 24px; margin-top: -33px; }
+    .main_right{ width: 736px !important; }
+    .pink_title span{ background:none !important; padding-left: 0px !important;}
+    .profile-PHOTO_CMP_UserPhotoAlbumsWidget{ display:none !important; }
+    .lady_info_right{ padding-left: 0px !important;}
+    .ow_profile_gallery_toolbox, .ow_profile_gallery_place, .ow_profile_gallery_cont_wrap{ display:none !important;}
+    .lady_probox{ margin: 0 0 0 10px !important; }
+{/literal}{/style}
+{if $user_sex == '808aa8ca354f51c5a3868dad5298cd72'}
+    {style}{literal}
+        .main_joinarea{ background: url(men-bg.png)no-repeat center 256px !important; }
+    {/literal}{/style}
+{/if}
+<table class="ow_table_3 ow_nomargin section_{$sectionName} data_table lady_probox" {if empty($display)}style="display:none;"{/if}>
+    <tr class="ow_tr_first">
+        <tr class="ow_tr_first">
+            <th colspan="2" class="ow_section pink_title"><span>{text key="base+questions_section_`$sectionName`_label"}</span></th>
+        </tr>
+    </tr>
+    {foreach  from=$questions key='sort' item='question' name='question'}
+        {if isset( $questionsData[$question.name] ) }
+            <tr class="{if $smarty.foreach.question.last}ow_tr_last{/if} lady_info_main email_push">
+                <td class="ow_label lady_info_left in-block" style="width: 20%">{if empty($labels[$question.name])}{text key="base+questions_question_`$question.name`_label"}{else}{$labels[$question.name]}{/if}</td>
+                <td class="ow_value lady_info_right in-block">:<span style="padding-left: 15px; display: inline-block;" class="{if !empty($question.hidden)}ow_field_eye ow_remark profile_hidden_field{/if}">{$questionsData[$question.name]}</span></td>
+            </tr>
+        {/if}
+    {/foreach}
+</table>

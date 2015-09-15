@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="hammu" label="Hammu" language_tag="en" language_label="English">
+
+
+    <key name="email_verify_template_text">
+        <value></value>
+    </key>
+    <key name="email_verify_template_html">
+        <value></value>
+    </key>
+</prefix>
